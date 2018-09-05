@@ -1,0 +1,2 @@
+{	"hitsPerPage": 500
+}

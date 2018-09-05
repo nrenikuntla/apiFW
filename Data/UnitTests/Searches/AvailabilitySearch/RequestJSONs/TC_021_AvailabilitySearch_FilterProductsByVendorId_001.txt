@@ -1,0 +1,6 @@
+{
+  "availableDates": {
+    "endDate": "2018-09-30",
+    "startDate": "2018-09-01"
+  }
+}

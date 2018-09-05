@@ -1,0 +1,11 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+  "query": "Hyderabad",
+  "reviews": {
+    "max": 10.0,
+    "min": 5.0
+  }
+}

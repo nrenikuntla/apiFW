@@ -1,0 +1,8 @@
+{
+	"hitsPerPage": 20,
+	"location": {
+		"webId": "qm"
+	},
+	"pageNumber": 0,
+	"sortBy": "recommended"
+}

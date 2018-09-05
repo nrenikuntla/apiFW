@@ -1,0 +1,28 @@
+{
+  "productOptionId": "V28Hi3pU7u00",
+  "travelers": [
+    {
+      "ageBandId": 1,
+      "countryISOCode": "US",
+      "dateOfBirth": "1986-12-20",
+      "email": "chiranjeevi.alti@zenq.com",
+      "firstName": "Chiranjeevi",
+      "lastName": "Alti",
+      "leadTraveler": true,
+      "phoneNumber": "2086735555",
+      "title": "Mr."
+    },
+    {
+      "ageBandId": 1,
+      "countryISOCode": "US",
+      "dateOfBirth": "1991-03-15",
+      "email": "chiranjeevi.alti@zenq.com",
+      "firstName": "Harika",
+      "lastName": "Alti",
+      "leadTraveler": true,
+      "phoneNumber": "2086735555",
+      "title": "Ms."
+    }
+
+  ]
+}

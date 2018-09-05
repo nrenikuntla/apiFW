@@ -1,0 +1,35 @@
+{
+  
+"cartId": "6c4a72f3-f134-4863-932a-4d73ed3be8b5",
+  
+"customerId": "string",
+ 
+ "email": "test@placepass.com",
+  
+ 
+ "partnerId": "17873a08-ac3e-489a-9f86-34b41af560db",
+ 
+ "payment": 
+{
+   
+ "cardType": "credit",
+  
+  "currencyCode": "USD",
+  
+  "expiryDate": "10/20",
+
+   "holderName": "Chiranjeevi",
+ 
+   "last4CardNumber": "4444",
+ 
+   "paymentAmount": 402.0,
+  
+  "paymentId": "string",
+   
+ "paymentType": "string",
+ 
+   "tokenizedNumber": ""
+ 
+ }
+
+}

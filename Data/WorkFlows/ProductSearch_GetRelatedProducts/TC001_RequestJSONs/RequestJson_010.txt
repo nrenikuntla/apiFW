@@ -1,0 +1,6 @@
+{
+  "isBookable": true,
+  "location": {
+    "formattedAddress": "San Antonio, TX"
+   }
+}

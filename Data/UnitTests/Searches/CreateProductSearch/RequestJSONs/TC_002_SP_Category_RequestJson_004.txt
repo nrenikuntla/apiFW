@@ -1,0 +1,6 @@
+{
+  "categories": [
+    "Culinary Tours",
+    "Nature & Adventure"
+  ]
+}

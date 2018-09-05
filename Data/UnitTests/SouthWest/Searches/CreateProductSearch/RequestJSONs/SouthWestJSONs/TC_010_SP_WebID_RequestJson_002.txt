@@ -1,0 +1,6 @@
+{
+  "hitsPerPage": 100,
+  "location": {
+    "webId": "g2"
+  }
+}

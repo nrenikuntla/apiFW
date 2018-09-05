@@ -1,0 +1,9 @@
+{
+  "availableDates": {
+    "endDate": "2018-12-30",
+    "startDate": "2018-12-01"
+  },
+ "ratings": [ 1,2,3 ],
+"hitsPerPage":50
+
+}

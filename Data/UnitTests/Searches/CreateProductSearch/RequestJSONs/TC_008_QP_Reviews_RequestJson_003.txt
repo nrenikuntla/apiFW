@@ -1,0 +1,7 @@
+{
+  "query": "Dubai",
+  "reviews": {
+    "max": 250.0,
+    "min": 150.0
+  }
+}

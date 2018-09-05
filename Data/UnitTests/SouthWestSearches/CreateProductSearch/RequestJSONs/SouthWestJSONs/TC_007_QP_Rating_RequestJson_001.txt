@@ -1,0 +1,4 @@
+{
+  "query": "San Diego",
+  "ratings": [5]
+}

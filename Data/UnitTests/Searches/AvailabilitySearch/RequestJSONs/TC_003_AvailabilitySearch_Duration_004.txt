@@ -1,0 +1,18 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+ "ratings": [
+    4,5
+  ],
+  "price": {
+    "max": 500,
+    "min": 200
+  },
+  "durationInMinutes": {
+    "max": 1440,
+    "min": 0
+  },
+  "hitsPerPage":50
+}

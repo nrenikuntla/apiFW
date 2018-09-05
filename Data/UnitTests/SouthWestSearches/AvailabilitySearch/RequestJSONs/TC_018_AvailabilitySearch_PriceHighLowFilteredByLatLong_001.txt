@@ -1,0 +1,11 @@
+{
+  "availableDates": {
+    "endDate": "2018-12-30",
+    "startDate": "2018-12-01"
+  },
+  "sortBy":"priceHighLow",
+  "location": {
+    "latitude": 52.3702157,
+    "longitude":  4.895167900000001
+  }
+}

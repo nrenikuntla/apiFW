@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="SouthWest API Suite" annotations="JDK" parallel="tests">
+<parameter name="environment" value="PreProd"/>
+
+	<test name="SouthWest_PreProd Suite">
+		<classes>
+			<class name="com.testsuite.southwests.Searches.SouthWestSearchProducts"/>
+			<class name="com.testsuite.southwests.Booking.SouthWestCreateShoppingCart"/>
+			<class name="com.testsuite.southwests.Booking.SouthWestAddBookingOptions"/>
+			<class name="com.testsuite.southwests.Booking.SouthWestBookingQuestions"/>
+			
+		</classes>
+	</test>
+</suite>

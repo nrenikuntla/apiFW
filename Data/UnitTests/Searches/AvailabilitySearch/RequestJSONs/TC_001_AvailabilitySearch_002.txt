@@ -1,0 +1,7 @@
+{
+  "availableDates": {
+    "endDate": "2018-06-30",
+    "startDate": "2018-06-01"
+  },
+"hitsPerPage": 50
+}

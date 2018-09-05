@@ -1,0 +1,7 @@
+{
+  "price": {
+    "max": 60.0,
+    "min": 10.0
+  },
+  "query": "Hyderabad"
+}

@@ -1,0 +1,4 @@
+{  
+ "ratings": [ 1,2,3 ],
+"hitsPerPage":1000
+}

@@ -1,0 +1,4 @@
+{
+  "query": "New York",
+   "triedAndTrue": true
+}

@@ -1,0 +1,7 @@
+{
+  "sortBy":"priceHighLow",
+  "location": {
+    "latitude": 28.5091355,
+    "longitude": 34.5136344
+  }
+}

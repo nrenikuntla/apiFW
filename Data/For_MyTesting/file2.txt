@@ -1,0 +1,16 @@
+[
+{
+  "key1":"value1",
+  "productIds1": [
+    "V28Hi3EEu088vH",
+"abc1","abc2"
+  ]
+},
+{
+  "key2":"value2",
+  "productIds2": [
+    "V28Hi3EEu088vH2",
+"def1","def2"
+  ]
+}
+]

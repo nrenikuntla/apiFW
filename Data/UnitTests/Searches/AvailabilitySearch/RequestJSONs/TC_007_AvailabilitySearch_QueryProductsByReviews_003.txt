@@ -1,0 +1,11 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-010-01"
+  },
+  "query": "Dubai",
+  "reviews": {
+    "max": 250.0,
+    "min": 150.0
+}
+}

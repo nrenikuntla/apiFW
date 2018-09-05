@@ -1,0 +1,10 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+"sortBy":"priceLowHigh",
+"hitsPerPage" : 50,
+"pageNumber": 1 
+
+}

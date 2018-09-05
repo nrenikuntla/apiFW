@@ -1,0 +1,97 @@
+package com.testsuite.placepass.hertz;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.api.category.Hertz;
+import com.base.BaseSetup;
+import com.datamanager.ConfigManager;
+import com.datamanager.ExcelManager;
+import com.datamanager.JSONManager;
+import com.testsuite.dataprovider.UnitTests_TestData_Provider;
+import com.utilities.APIHelpers;
+
+public class HertzGetVehicleRes extends BaseSetup {
+	
+//	Declaration of respective API Parts instances
+	ExcelManager excel_Manager;
+	Hertz hertz;
+	private APIHelpers apiHelpers;
+	public ConfigManager api;
+	JSONManager jsonObject;
+	
+	public String currentTestName;
+	List<String> headers = new ArrayList<String>();
+	
+	/**
+	 * Purpose - Initializes the API parts instances
+	 */
+	@BeforeMethod(alwaysRun = true)
+	public void SetUp(Method method) {
+		
+		apiHelpers = new APIHelpers();
+		api = new ConfigManager("Api");
+		hertz = new Hertz();
+		currentTestName = method.getName();
+		jsonObject = new JSONManager();
+		
+	}
+	
+	/**
+	 * @throws ParseException 
+	 * 
+	 */
+	//@Test(dataProviderClass=UnitTests_TestData_Provider.class, dataProvider="TC001_HertzGetVehicleRes")
+	public void tc_API_001_HertzGetVehicleResUsingPostMethod(String endPoint, String partnerId, String availabilityJSON,
+			String vehicleCode, String reservationJSON, String firstName, String email) throws ParseException{
+		
+	//	Availability	
+		HashMap<String,String> response = hertz.requestHertzGetVehicleAvailRate(currentTestName, endPoint, partnerId, availabilityJSON);
+		
+	//	Verify response code and message
+		hertz.verifyStatusCode("200");
+		hertz.verifyStatusMessage("OK");
+		
+		hertz.verifyVehicleAvailabilities(vehicleCode);
+		
+		String responseString = response.get("response body");
+		
+		JSONParser parser = new JSONParser();
+		JSONObject object = (JSONObject) parser.parse(responseString);
+		
+		JSONArray availabilities = (JSONArray) object.get("Availabilities");
+		JSONObject availability = (JSONObject) availabilities.get(0);
+		JSONObject reference = (JSONObject) availability.get("Reference");
+		String referenceId = reference.get("Id").toString();
+		
+	//	Update JSON with Reference id	
+		String requestJSON = System.getProperty("user.dir") + reservationJSON;
+		String requestBody = jsonObject.readJSONContentToString(requestJSON);
+		
+		object = (JSONObject) parser.parse(requestBody);
+		object.put("ReferenceId",referenceId);
+		requestBody = object.toJSONString();
+		System.out.println("==============After inserting ReferenceID===========\n" + requestBody);
+		
+	//	Reservation	
+		endPoint = "/cars/api/hertz/booking";
+		
+		hertz.requestHertzGetVehicleRes(currentTestName, endPoint, partnerId, requestBody, reservationJSON);		
+		
+	//	Verify response code and message
+		hertz.verifyStatusCode("200");
+		hertz.verifyStatusMessage("OK");
+		
+		hertz.verifyVehicleReservation(firstName,email);
+	}
+
+}

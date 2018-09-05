@@ -1,0 +1,13 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+  "hitsPerPage": 10,
+  "isBookable": true,
+  "location": {
+    "formattedAddress": "Hyderabad, India"
+  },
+  "pageNumber": 2
+
+}

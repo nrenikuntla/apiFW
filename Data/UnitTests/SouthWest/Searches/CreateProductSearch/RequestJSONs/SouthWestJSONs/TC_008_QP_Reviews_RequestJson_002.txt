@@ -1,0 +1,7 @@
+{
+  "query": "New York",
+  "reviews": {
+    "max": 1000.0,
+    "min": 500.0
+  }
+}

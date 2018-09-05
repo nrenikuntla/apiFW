@@ -1,0 +1,6 @@
+{
+  "hitsPerPage": 10,
+  "location": {
+    "webId": "kl"
+  }
+}

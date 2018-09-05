@@ -1,0 +1,11 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+  "price": {
+    "max": 100.0,
+    "min": 60.0
+  },
+  "query": "Hyderabad"
+}

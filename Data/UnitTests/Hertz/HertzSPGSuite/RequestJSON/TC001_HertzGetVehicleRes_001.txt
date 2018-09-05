@@ -1,0 +1,41 @@
+{
+  "RentalInfo": {
+    "PickUpDateTime": "2018-07-01T10:00",
+    "ReturnDateTime": "2018-07-03T10:00",
+    "PickUpLocation": {
+      "LocationCode": "BOS"
+    },
+    "ReturnLocation": {
+      "LocationCode": "BOS"
+    }
+  },
+  "CustomerInfo": {
+    "Title": "Mr",
+    "FirstName": "Chiranjeevi",
+    "FullName": "Chiranjeevi Alti",    
+    "LastName": "Alti",
+    "Email": "test@placepass.com",
+    "IsAdultAge": true
+  },
+  "VehiclePreference": {
+    "Code": "ECAR"
+  },
+  "RateQualifers": {
+    "TravelPurpose": "Business",
+    "CorpDiscountNmbr": "154080",
+    "PromotionCode": null,
+    "RateQualifier": "string"
+  },
+  "SpecialEquipPrefs": [
+    {
+      "EquipType": "SkierizedEquipment",
+      "Quantity": "string"
+    }
+  ],
+  "Coverages": [
+    {
+      "Coverage": "CollisionDamageWaiver"
+    }
+  ],
+  "EarnType": "SPG"
+}

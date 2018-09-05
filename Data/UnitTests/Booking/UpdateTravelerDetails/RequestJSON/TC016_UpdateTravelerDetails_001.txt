@@ -1,0 +1,17 @@
+{
+  "productOptionId": "UOAaUagIWLP1nZ*IIZ4*SIPP*1d40*gEWPgWBuZE1P*WXDz4XIW*H2Ua*F8AaT*01:00",
+  "travelers": [
+    {
+      "ageBandId": 1,
+      "countryISOCode": "US",
+      "dateOfBirth": "1986-12-20",
+      "email": "chiranjeevi.alti@zenq.com",
+      "firstName": "Chiranjeevi",
+      "lastName": "Alti",
+      "leadTraveler": "true",
+      "phoneNumber": "2086735555",
+      "title": "Mr."
+    }
+   
+  ]
+}

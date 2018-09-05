@@ -1,0 +1,8 @@
+{
+  "hitsPerPage": 10,
+  "isBookable": true,
+  "location": {
+    "formattedAddress": "Hyderabad, India"
+  },
+  "pageNumber": 2
+}

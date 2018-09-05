@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="PlacePass API Suite" annotations="JDK" parallel="tests">
+<parameter name="environment" value="prod"/>
+<!-- <listeners>
+<listener class-name="com.listener.TestListener" />
+</listeners> -->	
+
+	<test name="PROD_MiniSmoke_Suite">
+		<classes>
+			<class name="com.testsuite.placepass.searches.SearchProducts"/>
+			<class name="com.testsuite.placepass.products.GetAvailability"/>
+			<class name="com.testsuite.placepass.booking.CreateShoppingCart"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleAvailRate"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlacesWithProperties"/>
+			<class name="com.testsuite.placepass.discount.ValidateDiscount"/>		
+		</classes>
+	</test>
+</suite>

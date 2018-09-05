@@ -1,0 +1,14 @@
+{
+  "availableDates": {
+    "endDate": "2018-12-30",
+    "startDate": "2018-12-01"
+  },
+ "sortBy":"priceLowHigh",
+  "location": {
+ "webId": "q"
+  },
+  "query":"art",
+  "pageNumber": 0,
+  "price":{"min":80, "max":10000},
+  "hitsPerPage":20  
+}

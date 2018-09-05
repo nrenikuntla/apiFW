@@ -1,0 +1,25 @@
+{
+  "bookingOptions": [
+    {
+      "bookingDate": "2018-12-30",
+      "productId": "V28Hi3Zn7LpZZ",
+      "productOptionId": "V28Hi3Tah8ONH",
+      "quantities": [
+        {
+          "ageBandId": 1,
+          "ageBandLabel": "ADULT",
+	  "quantity" : "1"          
+        },
+        {
+          "ageBandId": 3,
+          "ageBandLabel": "INFANT",
+          "quantity" : "1"
+       }],
+	"traverllerDetails": null,
+	"pickupLocation": {
+	"id": "",
+	"locationName": ""
+  	}  
+    }
+  ]
+}

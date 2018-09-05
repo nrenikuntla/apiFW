@@ -1,0 +1,7 @@
+{
+  "hitsPerPage": 100,
+  "location": {
+    "latitude": 40.735657,
+    "longitude": -74.1723667
+  }
+}

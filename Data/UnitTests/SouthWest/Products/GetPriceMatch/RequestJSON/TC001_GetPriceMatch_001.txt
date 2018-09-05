@@ -1,0 +1,25 @@
+{
+"prices": [
+        {
+          "priceGroupSortOrder": 1,
+          "priceType": "ADULT",
+          "ageBandId": 1,
+          "currencyCode": "USD",
+          "description": "Adult Price",
+          "retailPrice": 187.35,
+          "finalPrice": 187.35,
+          "roundedFinalPrice": 188.0,
+          "maxBuy": -1,
+          "minBuy": 1,
+          "ageFrom": 13,
+          "ageTo": 99
+        }
+      ],
+"quantities": [
+ {
+   "ageBandId": 1,
+   "ageBandLabel": "ADULT",
+   "quantity": 4
+ }
+]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="PlacePass API Suite" annotations="JDK" parallel="tests">
+<parameter name="environment" value="qa"/>
+<!-- <listeners>
+<listener class-name="com.listener.TestListener" />
+</listeners> -->	
+
+	<test name="QA_Smoke_Suite">
+		<classes>
+			<class name="com.testsuite.placepass.searches.SearchProducts"/>
+			<class name="com.testsuite.placepass.products.GetAvailability"/>
+			<class name="com.testsuite.placepass.products.GetProductDetails"/>
+			<class name="com.testsuite.placepass.products.GetProductOptions"/>
+			<class name="com.testsuite.placepass.booking.CreateShoppingCart"/>
+			<class name="com.testsuite.placepass.booking.FindPastBooking"/>
+			<class name="com.testsuite.placepass.booking.GetBookingQuestions"/>
+			<class name="com.testsuite.placepass.booking.GetSingleBooking"/>
+			<class name="com.testsuite.placepass.booking.GetVoucherDetails"/>
+			<class name="com.testsuite.placepass.booking.ProcessPaymentAndCreateBooking"/>
+			<class name="com.testsuite.placepass.booking.RequestCancelBooking"/>
+			<class name="com.testsuite.placepass.booking.UpdateBookerDetails"/>
+			<class name="com.testsuite.placepass.booking.UpdateBookingAnswers"/>
+			<class name="com.testsuite.placepass.booking.UpdateTravelerDetails"/>
+			<class name="com.testsuite.placepass.booking.ValidateShoppingCart"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleAvailRate"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleAvailRateOptions"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleRes"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleRetRes"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleCancel"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerConfig"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlaceConfig"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlacesWithProperties"/>
+			<class name="com.testsuite.placepass.data.PartnerPlaceSitemap"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerProperty"/>
+			<class name="com.testsuite.placepass.discount.ValidateDiscount"/>		
+		</classes>
+	</test>
+</suite>

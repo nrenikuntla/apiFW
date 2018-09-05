@@ -1,0 +1,7 @@
+{
+  "query": "Hyderabad",
+  "reviews": {
+    "max": 10.0,
+    "min": 5.0
+  }
+}

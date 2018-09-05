@@ -1,0 +1,7 @@
+{
+ "payment": {
+  "tokenizedNumber": "tok_visa"	
+ },
+ "email": "test@placepass.com",
+ "customerId":"5500"
+}

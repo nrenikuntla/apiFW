@@ -1,0 +1,8 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+  "query": "New York",
+   "triedAndTrue": false
+}

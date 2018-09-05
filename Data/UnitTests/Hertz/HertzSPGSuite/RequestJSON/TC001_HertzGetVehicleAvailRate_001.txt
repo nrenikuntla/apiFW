@@ -1,0 +1,39 @@
+{
+  "RentalInfo": {
+    "PickUpDateTime": "2018-07-01T10:00",
+    "ReturnDateTime": "2018-07-03T10:00",
+    "PickUpLocation": {
+      "LocationCode": "BOS"
+    },
+    "ReturnLocation": {
+      "LocationCode": "BOS"
+    }
+  },
+  "MaxResponses": 0,
+  "SortBy": "PriceLowHigh",
+  "RateQualifers": {
+    "TravelPurpose": "Business",
+    "CorpDiscountNmbr": "154080",
+    "PromotionCode": "204373",
+    "RateQualifier": "string"
+  },
+  "VehiclePreference": {
+        "Code": "ECAR"
+  },  
+  "DriverType": {
+    "Age": "string"
+  },
+  
+  "SpecialEquipPrefs": [
+    {
+      "EquipType": "SkierizedEquipment",
+      "Quantity": "string"
+    }
+  ],
+  "Coverages": [
+    {
+      "Coverage": "CollisionDamageWaiver"
+    }
+  ],
+  "EarnType": "SPG"
+}

@@ -1,0 +1,58 @@
+{
+  "RentalInfo": {
+    "PickUpDateTime": "2018-12-01T16:00",
+    "ReturnDateTime": "2018-12-04T18:00",
+    "PickUpLocation": {
+      "LocationCode": "BOS",
+      "LocationCity": "BOSTON",
+      "LocationDescription": "string"
+    },
+    "ReturnLocation": {
+      "LocationCode": "BOS",
+      "LocationCity": "BOSTON",
+      "LocationDescription": "string"
+    }
+  },
+  "MaxResponses": 0,
+  "SortBy": "PriceLowHigh",
+  "RateQualifers": {
+    "TravelPurpose": "Business",
+    "CorpDiscountNmbr": "154080",
+    "PromotionCode": "204373",
+    "RateQualifier": "string"
+  },
+  "VehiclePreference": {
+    "Code": "ECAR"
+  },
+  "DriverType": {
+    "Age": "string"
+  },
+  "CustomerInfo": {
+    "Title": "Mr.",
+    "FirstName": "ZenQ",
+    "FullName": "ZenQ Testing",
+    "MiddleInitial": "string",
+    "LastName": "Testing",
+    "Email": "test@placepass.com",
+    "IsAdultAge": true,
+    "CustomerLoyalty": [
+      {
+        "RewardsNumber": "string",
+        "Company": "string",
+        "TravelSector": "Air"
+      }
+    ]
+  },
+  "SpecialEquipPrefs": [
+    {
+      "EquipType": "SkierizedEquipment",
+      "Quantity": "string"
+    }
+  ],
+  "Coverages": [
+    {
+      "Coverage": "CollisionDamageWaiver"
+    }
+  ],
+  "EarnType": "MAR"
+}

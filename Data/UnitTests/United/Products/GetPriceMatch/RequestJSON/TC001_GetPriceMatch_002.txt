@@ -1,0 +1,44 @@
+{
+"prices": [
+    {
+        "priceGroupSortOrder": 1,
+        "priceType": "ADULT",
+        "ageBandId": 1,
+        "currencyCode": "USD",
+        "description": "Adult Price",
+        "retailPrice": 443.99,
+        "finalPrice": 443.99,
+        "roundedFinalPrice": 444.0,
+        "maxBuy": -1,
+        "minBuy": 1,
+        "ageFrom": 2,
+        "ageTo": 99
+    },
+    {
+      "priceGroupSortOrder": 1,
+      "priceType": "INFANT",
+      "ageBandId": 3,
+      "currencyCode": "USD",
+      "description": "Infant Price",
+      "retailPrice": 0.0,
+      "finalPrice": 0.0,
+      "roundedFinalPrice": 0.0,
+      "maxBuy": -1,
+      "minBuy": 0,
+      "ageFrom": 0,
+      "ageTo": 1
+    }
+  ],
+"quantities": [
+ {
+   "ageBandId": 1,
+   "ageBandLabel": "ADULT",
+   "quantity": 2
+ },
+ {
+   "ageBandId": 3,
+   "ageBandLabel": "INFANT",
+   "quantity": 1
+ }
+]
+}

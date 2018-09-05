@@ -1,0 +1,12 @@
+{
+  "availableDates": {
+    "endDate": "2018-10-30",
+    "startDate": "2018-10-01"
+  },
+
+  "hitsPerPage": 25,
+  "location": {
+    "latitude": 17.385044,
+    "longitude": 78.486671
+  }
+}

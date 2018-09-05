@@ -1,0 +1,6 @@
+{
+  "isBookable": true,
+  "location": {
+    "formattedAddress": "Las Vegas, NV"
+   }
+}

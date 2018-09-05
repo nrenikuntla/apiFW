@@ -1,0 +1,11 @@
+{
+  "bookerRequest": {
+    "countryISOCode": "US",
+    "dateOfBirth": "",
+    "email": "test@placepass.com",
+    "firstName": "Chiranjeevi",
+    "lastName": "Alti",
+    "phoneNumber": "2086735555",
+    "title": "Mr."
+  }
+}

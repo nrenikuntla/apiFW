@@ -1,0 +1,7 @@
+{
+  "key1":"value1",
+  "productIds": [
+    "V28Hi3EEu088vH",
+"abc1","abc2"
+  ]
+}

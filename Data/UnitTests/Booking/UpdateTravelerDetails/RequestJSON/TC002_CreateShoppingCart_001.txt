@@ -1,0 +1,17 @@
+{
+  "bookingOptions": [
+    {
+      "bookingDate": "2018-12-30",
+      
+      "productId": "V28Hi3ZuSnb2ovH",
+      "productOptionId": "V28Hi3pU7u00",
+      "quantities": [
+        {
+          "ageBandId": 1,
+          "ageBandLabel": "ADULT",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

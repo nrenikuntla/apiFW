@@ -1,0 +1,4 @@
+{
+  "query": "Hyderabad",
+  "ratings": [5]
+}

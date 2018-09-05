@@ -1,0 +1,38 @@
+ {
+  "cartId": "40a89098-e675-467e-be61-84d630b303e8",
+  "customerId": "string",
+  "discounts": [
+    {
+      "description": "Double Points Applied",
+      "discountAmount": 0.0,
+      "discountCode": "GET2X",
+      "discountId": "oaHEjuSLu17Z0*udSu*SLBn*4IgB*EZIZd7dB1ZZ4",
+      "discountStatus": "OPEN",
+      "discountType": "PERCENTAGE",
+      "discountValue": 0.0,
+      "expiryDate": "31-08-2018 23:59:59",
+      "message": "string",
+      "title": "Double Points Applied"
+    }
+  ],
+  "email": "test@placepass.com",
+  "emailSubscription": true,
+  "extendedAttributes": {},
+  "loyaltyAccount": {
+    "loyaltyAccountId": "123456789",
+    "loyaltyPoints": 0,
+    "loyaltyProgramId": "MAR"
+  },
+  "partnerId": "84389150-8f48-43b7-ac6b-25c5f1fb955a",
+  "payment": {
+    "cardType": "CREDIT",
+    "currencyCode": "USD",
+    "expiryDate": "10/20",
+    "holderName": "Chiranjeevi",
+    "last4CardNumber": "4444",
+    "paymentAmount": 0.0,
+    "paymentId": "string",
+    "paymentType": "string",
+    "tokenizedNumber":""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "availableDates": {
+    "endDate": "2018-12-30",
+    "startDate": "2018-12-01"
+  },
+  "price": {
+    "max": 100.0,
+    "min": 60.0
+  },
+  "query": "Chicago"
+}

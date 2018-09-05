@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="NearbySuite" annotations="JDK" parallel="tests">
+<parameter name="environment" value="stage1"/>
+<!-- <listeners>
+<listener class-name="com.listener.TestListener" />
+</listeners> -->	
+
+	<test name="Nearby">
+		<classes>
+			<class name="com.testsuite.placepass.searches.SearchProducts" >
+			<methods> <include name="tc_API_026_searchProductsByWebId"/> </methods>
+			</class>						
+		</classes>
+	</test>
+</suite>

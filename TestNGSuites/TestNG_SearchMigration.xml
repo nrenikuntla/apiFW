@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="PlacePass API Suite" annotations="JDK" parallel="tests">
+
+	<test name="Search Migration Suite">
+		<classes>
+			<class name="com.testsuite.searchmigration.SearchMigration"/>				
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="2" verbose="1" name="PlacePass API Suite" annotations="JDK" parallel="tests">
+<parameter name="environment" value="stage1"/>
+
+	<test name="STAGE1 Suite">
+		<classes>
+			<class name="com.testsuite.placepass.searches.SearchProducts"/>
+			<class name="com.testsuite.placepass.searches.ProductsByIds"/>
+			<class name="com.testsuite.placepass.searches.GetRelatedProducts"/>
+			<class name="com.testsuite.placepass.searches.GetProducts"/>
+			<class name="com.testsuite.placepass.products.GetAvailability"/>
+			<class name="com.testsuite.placepass.products.GetProductDetails"/>
+			<class name="com.testsuite.placepass.products.GetProductOptions"/>
+			<class name="com.testsuite.placepass.products.GetProductReviews"/>
+			<class name="com.testsuite.placepass.products.GetHotelDetails"/>
+			<class name="com.testsuite.placepass.products.GetPriceMatch"/>
+			<class name="com.testsuite.placepass.booking.CreateShoppingCart"/>
+			<class name="com.testsuite.placepass.booking.AddBookingOptionsToCart"/>
+			<class name="com.testsuite.placepass.booking.FindPastBooking"/>
+			<class name="com.testsuite.placepass.booking.GetBookingQuestions"/>
+			<class name="com.testsuite.placepass.booking.GetSingleBooking"/>
+			<class name="com.testsuite.placepass.booking.GetSingleBookingforCustomer"/>
+			<class name="com.testsuite.placepass.booking.GetVoucherDetails"/>
+			<class name="com.testsuite.placepass.booking.ProcessPaymentAndCreateBooking"/>
+			<class name="com.testsuite.placepass.booking.RemoveItemsFromShoppingCart"/>
+			<class name="com.testsuite.placepass.booking.RequestCancelBooking"/>
+			<class name="com.testsuite.placepass.booking.RequestGroupBooking"/>
+			<class name="com.testsuite.placepass.booking.UpdateBookerDetails"/>
+			<class name="com.testsuite.placepass.booking.UpdateBookingAnswers"/>
+			<class name="com.testsuite.placepass.booking.UpdateHotelPickupLocation"/>
+			<class name="com.testsuite.placepass.booking.UpdateLanguageOptionCode"/>
+			<class name="com.testsuite.placepass.booking.UpdateTravelerDetails"/>
+			<class name="com.testsuite.placepass.booking.ViewBookingsHistory"/>
+			<class name="com.testsuite.placepass.booking.ValidateShoppingCart"/>
+			<class name="com.testsuite.placepass.hertz.GetVehicleLocations"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleLocationDetails"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleAvailRate"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleAvailRateOptions"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleRes"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleRetRes"/>
+			<class name="com.testsuite.placepass.hertz.HertzGetVehicleCancel"/>
+			<class name="com.testsuite.placepass.data.GetAllCountryTypePlaces"/>
+			<class name="com.testsuite.placepass.data.GetPlaceByLatLng"/>
+			<class name="com.testsuite.placepass.data.GetPlaceByLatLng_PP"/>
+			<class name="com.testsuite.placepass.data.GetTopDestinations"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerConfig"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlaceConfig"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlaceConfig_PP"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlacesWithProperties"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerPlacesWithProperties_PP"/>
+			<class name="com.testsuite.placepass.data.PartnerPlaceSitemap"/>
+			<class name="com.testsuite.placepass.data.PartnerPlaceSitemap_PP"/>
+			<class name="com.testsuite.placepass.data.LookupPartnerProperty"/>
+			<class name="com.testsuite.placepass.discount.ValidateDiscount"/>
+			<class name="com.testsuite.placepass.workflows.ProductSearch_GetRelatedProducts"/>
+			<class name="com.testsuite.placepass.workflows.CreateShoppingCart_ViewShoppingCart"/>		
+		</classes>
+	</test>
+</suite>

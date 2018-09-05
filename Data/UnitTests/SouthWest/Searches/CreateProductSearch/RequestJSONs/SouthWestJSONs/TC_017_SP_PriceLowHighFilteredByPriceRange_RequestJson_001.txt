@@ -1,0 +1,8 @@
+{
+"sortBy":"priceLowHigh",
+"price": {
+    "max": 120,
+    "min": 60
+  } ,
+"hitsPerPage": 1000
+}

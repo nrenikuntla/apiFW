@@ -1,0 +1,60 @@
+{
+  "productOptionId": "V28Hi3Tah8ONH",
+  "travelers": [
+    {
+       "ageBandId": 3,
+       "title":"Ms.",
+       "firstName":"Yashika",
+       "lastName":"Alti",
+       "email":"chiranjeevi.alti@zenq.com",
+       "phoneNumber":"2086735555",
+       "countryISOCode":"US",
+       "dateOfBirth":"2016-12-27",
+       "leadTraveler":false
+       },
+       {
+       "ageBandId": 2,
+       "title":"Mr.",
+       "firstName":"Venu",
+       "lastName":"Arram",
+       "email":"chiranjeevi.alti@zenq.com",
+       "phoneNumber":"2086735555",
+       "countryISOCode":"US",
+       "dateOfBirth":"2008-09-08",
+       "leadTraveler":false
+       },
+       {
+       "ageBandId": 1,
+       "title":"Mr.",
+       "firstName":"Chiranjeevi",
+       "lastName":"Alti",
+       "email":"chiranjeevi.alti@zenq.com",
+       "phoneNumber":"2086735555",
+       "countryISOCode":"US",
+       "dateOfBirth":"1986-12-20",
+       "leadTraveler":false
+       },
+       {
+       "ageBandId": 4,
+       "title":"Mr.",
+       "firstName":"ZenQ",
+       "lastName":"Testing",
+       "email":"chiranjeevi.alti@zenq.com",
+       "phoneNumber":"2086735555",
+       "countryISOCode":"US",
+       "dateOfBirth":"2004-09-08",
+       "leadTraveler":true
+       },
+       {
+       "ageBandId": 5,
+       "title":"Mr.",
+       "firstName":"Syam",
+       "lastName":"Renduchintala",
+       "email":"chiranjeevi.alti@zenq.com",
+       "phoneNumber":"2086735555",
+       "countryISOCode":"US",
+       "dateOfBirth":"1958-09-08",
+       "leadTraveler":false
+       }
+  ]
+}

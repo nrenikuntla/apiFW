@@ -1,0 +1,63 @@
+{
+	"prices": [{
+			"priceGroupSortOrder": 1,
+			"priceType": "ADULT",
+			"ageBandId": 1,
+			"currencyCode": "USD",
+			"description": "Adult Price",
+			"retailPrice": 395,
+			"finalPrice": 395,
+			"roundedFinalPrice": 395,
+			"maxBuy": 2,
+			"minBuy": 2,
+			"ageFrom": null,
+			"ageTo": null
+		}, {
+			"priceGroupSortOrder": 2,
+			"priceType": "ADULT",
+			"ageBandId": 1,
+			"currencyCode": "USD",
+			"description": "Adult Price",
+			"retailPrice": 330,
+			"finalPrice": 330,
+			"roundedFinalPrice": 330,
+			"maxBuy": 3,
+			"minBuy": 3,
+			"ageFrom": null,
+			"ageTo": null
+		}, {
+			"priceGroupSortOrder": 2,
+			"priceType": "CHILD",
+			"ageBandId": 2,
+			"currencyCode": "USD",
+			"description": "Child Price",
+			"retailPrice": 300,
+			"finalPrice": 300,
+			"roundedFinalPrice": 300,
+			"maxBuy": 1,
+			"minBuy": 1,
+			"ageFrom": null,
+			"ageTo": null
+		}, {
+			"priceGroupSortOrder": 3,
+			"priceType": "ADULT",
+			"ageBandId": 1,
+			"currencyCode": "USD",
+			"description": "Adult Price",
+			"retailPrice": 320,
+			"finalPrice": 320,
+			"roundedFinalPrice": 320,
+			"maxBuy": 4,
+			"minBuy": 4,
+			"ageFrom": null,
+			"ageTo": null
+		}
+	],
+	"quantities": [{
+			"ageBandId": 1,
+			"ageBandLabel": "ADULT",
+			"quantity": 4
+		}
+
+	]
+}

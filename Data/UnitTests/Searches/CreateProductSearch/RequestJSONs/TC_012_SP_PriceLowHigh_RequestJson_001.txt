@@ -1,0 +1,5 @@
+{
+"sortBy":"priceLowHigh",
+"hitsPerPage" : 200,
+"pageNumber": 1 
+}

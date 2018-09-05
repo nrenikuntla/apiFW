@@ -1,0 +1,4 @@
+{
+  "cancellationReasonCode": "00",
+  "extendedAttributes": {}
+}

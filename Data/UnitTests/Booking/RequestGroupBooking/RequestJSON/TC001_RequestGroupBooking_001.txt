@@ -1,0 +1,13 @@
+{
+  "additionalInfo": "string",
+  "adultTicket": "Eleven",
+  "bestTimeToContact": "string",
+  "childTicket": "five",
+  "desiredActivity": "sightseeing",
+  "destination": "BOSTON",
+  "email": "test@placepass.com",
+  "firstName": "ZenQ",
+  "lastName": "Testing",
+  "phoneNumber": "2086735555",
+  "travelTime": "11:00 AM"
+}

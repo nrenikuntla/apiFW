@@ -1,0 +1,22 @@
+{
+  "questionAnswers": [
+    {
+      "answer": "20 October 1970",
+      "bookingQuestionId": "1",
+      "productId": "V28Hi3g1S7H3aGG2bo",
+      "productOptionId": "V28Hi3Tah8ONH"
+    },
+    {
+      "answer": "15 September 2019",
+      "bookingQuestionId": "3",
+      "productId": "V28Hi3g1S7H3aGG2bo",
+      "productOptionId": "V28Hi3Tah8ONH"
+    },
+    {
+      "answer": "United States of America",
+      "bookingQuestionId": "4",
+      "productId": "V28Hi3g1S7H3aGG2bo",
+      "productOptionId": "V28Hi3Tah8ONH"
+    }
+  ]
+}

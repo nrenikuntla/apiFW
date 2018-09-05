@@ -1,0 +1,7 @@
+{
+  "hitsPerPage": 15,
+  "pageNumber": 1,
+  "location": {
+    "webId": "93"
+  }
+}

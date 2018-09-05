@@ -1,0 +1,6 @@
+{
+  "durationInMinutes": {
+    "max": 60.0,
+    "min": 0.0
+  }
+}

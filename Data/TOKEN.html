@@ -1,0 +1,513 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="google-site-verification" content="f0LCrdI6z4Fo8zld4sHCgo5SiUE4EYYRUa6KVeX3Mw8">
+    <meta name="csrf-token" content="mMjc_OYbkh9ud7Cpx0wBTwETfkqroTeYTjyjnax4r53rLrIqhFqk-AJewU6q7_6BPUfXFmQKN7uANCKbmJPkQg==">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Stripe Token Generater</title>
+
+    <meta name="description" content="Stripe is a suite of APIs that powers commerce for businesses of all sizes.">
+
+
+    <link rel="shortcut icon" href="https://stripe.com/favicon.ico">
+
+    <link rel="apple-touch-icon-precomposed" href="https://stripe.com/img/apple-touch-icon/180x180.png">
+    <link rel="icon" href="https://stripe.com/img/apple-touch-icon/180x180.png">
+
+
+    <link rel="image_src" type="image/png" href="https://stripe.com/img/v3/home/social.png">
+
+
+        <link rel="canonical" href="https://stripe.com/docs/elements">
+
+    <meta property="og:title" content="Stripe Elements Quickstart">
+    <meta property="og:url" content="https://stripe.com/docs/elements">
+    <meta property="og:description" content="Stripe is a suite of APIs that powers commerce for businesses of all sizes.">
+    <meta property="og:image" content="https://stripe.com/img/v3/home/social.png">
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:image" content="https://stripe.com/img/v3/home/twitter.png">
+    <meta name="twitter:site" content="@stripe">
+    <meta name="twitter:title" content="Stripe Elements Quickstart">
+    <meta name="twitter:description" content="Stripe is a suite of APIs that powers commerce for businesses of all sizes.">
+
+
+    <script src="https://js.stripe.com/v2/cspblocked.js?domain=file%3A%2F%2F%2FC%3A%2FUsers%2Fmanula.g%2FDesktop%2FPlacepass%2FNew%2520folder%2520(2)%2FStripe%2520Elements%2520Quickstart.html&amp;timestamp=1496989538&amp;info=AckTimeoutError&amp;payment_user_agent=stripe.js%2Fb1f54c7"></script><script type="text/javascript" async="" src="https://cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="./Stripe Elements Quickstart_files/mixpanel-2.2.min.js.download"></script><script async="" src="./Stripe Elements Quickstart_files/analytics.js.download"></script><script type="application/json" id="strut_files">{&quot;v3/shared/navigation_ie10.css&quot;:&quot;/assets/v3/shared/navigation_ie10-e01e5bea41add6270b67348b4d0e5ea2.css&quot;}</script>
+
+    
+
+    
+
+    <link rel="stylesheet" href="./Stripe Elements Quickstart_files/default-32f27bf24bd1832cc8bfec03b3505317.css">
+    <link rel="stylesheet" href="./Stripe Elements Quickstart_files/common-ceb5b535aaa09544a27a39d10f3e63a1.css">
+    <link rel="stylesheet" href="./Stripe Elements Quickstart_files/base-58d7fb093a60ea0dbae01bca1e7d7132.css">
+    <link rel="stylesheet" href="./Stripe Elements Quickstart_files/prism_light-1421445d84f158533a7a2e894119c3c0.css">
+    
+    
+    <meta name="viewport" content="width=1060">
+    <meta name="robots" content="noarchive">
+  <style id="__web-inspector-hide-shortcut-style__" type="text/css">
+.__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
+{
+    visibility: hidden !important;
+}
+</style></head>
+  <body class="">
+    
+    <div id="docs">
+      
+      <div id="content-wrapper" tabindex="0">
+        <div class="overlay"></div>
+          
+          
+        
+        <article id="content">
+
+<section>
+
+
+<p class="__web-inspector-hide-shortcut__">Here’s a preview of the custom payment form that you can build using the following guide. Try it out, using the test card number <strong>4242 4242 4242 4242</strong>, a random three-digit CVC number, any expiration date in the future, and a random five-digit U.S. ZIP code. Note that <a href="https://stripe.com/docs/stripe.js#postal-code-formatting">ZIP/postal code validation</a> is dependent on your customer’s billing country. Use our <a href="https://stripe.com/docs/testing#international-cards">international test cards</a> to experiment with other postal code formats.</p>  <div class="tabs tabs-code animated">
+    <nav class="nav-languages">
+        <a data-language="result" class="selected">Result</a>
+        <a data-language="html" class="">HTML</a>
+        <a data-language="css" class="">CSS</a>
+        <a data-language="javascript" class="">JavaScript</a>
+    </nav>
+    <div class="tabs-content">
+      <div class="tabs-tab tabs-tab-result selected" style="opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+  <iframe id="6bdd6e82-acd0-4999-9887-b524423e4145" width="100%" height="160" src="./Stripe Elements Quickstart_files/saved_resource.html"></iframe>
+  <script id="6bdd6e82-acd0-4999-9887-b524423e4145_template" type="text/template">
+    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;style media=&quot;screen&quot;&gt;
+body, html {
+  height: 100%;
+  background-color: #f7f8f9;
+  color: #6b7c93;
+}
+
+*, label {
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif;
+  font-size: 16px;
+  font-variant: normal;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  background: #32325d;
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  float: left;
+  margin-left: 12px;
+  margin-top: 31px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .10), 0 3px 6px rgba(0, 0, 0, .08);
+  background-color: #43458b;
+}
+
+form {
+  padding: 30px;
+  height: 120px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#card-errors {
+  height: 20px;
+  padding: 4px 0;
+  color: #fa755a;
+}
+
+.form-row {
+  width: 70%;
+  float: left;
+}
+
+.token {
+  color: #32325d;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#stripe-token-handler {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  padding: 20px 30px;
+  border-radius: 0 0 4px 4px;
+  box-sizing: border-box;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+    0 15px 35px rgba(50, 50, 93, 0.15),
+    0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+  background-color: white;
+}
+
+#stripe-token-handler.is-hidden {
+  opacity: 0;
+  transform: translateY(-80px);
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+  &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+
+  &lt;form action=&quot;/charge&quot; method=&quot;post&quot; id=&quot;payment-form&quot;&gt;
+    &lt;div class=&quot;form-row&quot;&gt;
+      &lt;label for=&quot;card-element&quot;&gt;
+        Credit or debit card
+      &lt;/label&gt;
+      &lt;div id=&quot;card-element&quot;&gt;
+        &lt;!-- a Stripe Element will be inserted here. --&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Used to display form errors --&gt;
+      &lt;div id=&quot;card-errors&quot; role=&quot;alert&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;button&gt;Submit Payment&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;stripe-token-handler&quot; class=&quot;is-hidden&quot;&gt;Success! Got token: &lt;span class=&quot;token&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  // Create a Stripe client
+  var stripe = Stripe('pk_test_1m5LjJF9AGbQUIwFMd0GiDu9');
+
+  // Create an instance of Elements
+  var elements = stripe.elements();
+
+  // Custom styling can be passed to options when creating an Element.
+  // (Note that this demo uses a wider set of styles than the guide below.)
+  var style = {
+    base: {
+      color: '#32325d',
+      lineHeight: '24px',
+      fontFamily: '&quot;Helvetica Neue&quot;, Helvetica, sans-serif',
+      fontSmoothing: 'antialiased',
+      fontSize: '16px',
+      '::placeholder': {
+        color: '#aab7c4'
+      }
+    },
+    invalid: {
+      color: '#fa755a',
+      iconColor: '#fa755a'
+    }
+  };
+
+  // Create an instance of the card Element
+  var card = elements.create('card', {style: style});
+
+  // Add an instance of the card Element into the `card-element` &lt;div&gt;
+  card.mount('#card-element');
+
+  // Handle real-time validation errors from the card Element.
+  card.addEventListener('change', function(event) {
+    var displayError = document.getElementById('card-errors');
+    if (event.error) {
+      displayError.textContent = event.error.message;
+    } else {
+      displayError.textContent = '';
+    }
+  });
+
+  // Handle form submission
+  var form = document.getElementById('payment-form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    stripe.createToken(card).then(function(result) {
+      if (result.error) {
+        // Inform the user if there was an error
+        var errorElement = document.getElementById('card-errors');
+        errorElement.textContent = result.error.message;
+      } else {
+        // Send the token to your server
+        stripeTokenHandler(result.token);
+      }
+    });
+  });
+
+  var successElement = document.getElementById('stripe-token-handler');
+  document.querySelector('.wrapper').addEventListener('click', function() {
+    successElement.className = 'is-hidden';
+  });
+
+  // Not in demo.
+  function stripeTokenHandler(token) {
+    successElement.className = '';
+    successElement.querySelector('.token').textContent = token.id;
+  }
+&lt;/script&gt;
+&lt;/html&gt;
+
+  </script>
+  <script type="text/javascript">
+  var doc = document.getElementById("6bdd6e82-acd0-4999-9887-b524423e4145").contentWindow.document;
+  var template = document.getElementById("6bdd6e82-acd0-4999-9887-b524423e4145_template").innerHTML;
+
+  function htmlDecode(input){
+    var e = document.createElement('div');
+    e.innerHTML = input;
+    return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+  }
+  doc.open();
+  doc.write(htmlDecode(template));
+  doc.close();
+  </script>
+</div>
+<div class="code absolute" data-language="html" style="opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1);">
+  <pre class=" numbered  language-html"><code class="  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"https://js.stripe.com/v3/"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"/charge"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"post"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"payment-form"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"form-row"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"card-element"</span></span><span class="token punctuation">&gt;</span></span>
+      Credit or debit card
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"card-element"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment" spellcheck="true">&lt;!-- a Stripe Element will be inserted here. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment" spellcheck="true">&lt;!-- Used to display form errors --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"card-errors"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token string">"alert"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Submit Payment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre>
+</div>
+<div class="code absolute" data-language="css" style="opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1);">
+  <pre class=" numbered  language-css"><code class="  language-css"><span class="token comment" spellcheck="true">/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */</span>
+<span class="token selector">.StripeElement</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 8px 12px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid transparent<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 1px 3px 0 #e6ebf1<span class="token punctuation">;</span>
+  <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> box-shadow 150ms ease<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> box-shadow 150ms ease<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.StripeElement--focus</span> <span class="token punctuation">{</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 1px 3px 0 #cfd7df<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.StripeElement--invalid</span> <span class="token punctuation">{</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> #fa755a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.StripeElement--webkit-autofill</span> <span class="token punctuation">{</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fefde5 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre>
+</div>
+<div class="code absolute" data-language="javascript" style="opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 300, 0, 0, 1);">
+  <pre class=" numbered  language-javascript"><code class="  language-javascript"><span class="token comment" spellcheck="true">// Create a Stripe client</span>
+<span class="token keyword">var</span> stripe <span class="token operator">=</span> <span class="token function">Stripe</span><span class="token punctuation">(</span><span class="token string">'pk_test_X581T9wVJDOzgzRgUMoI4nPU'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Create an instance of Elements</span>
+<span class="token keyword">var</span> elements <span class="token operator">=</span> stripe<span class="token punctuation">.</span><span class="token property"></span><span class="token function">elements</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Custom styling can be passed to options when creating an Element.</span>
+<span class="token comment" spellcheck="true">// (Note that this demo uses a wider set of styles than the guide below.)</span>
+<span class="token keyword">var</span> style <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token symbol">base<span class="token punctuation">:</span></span> <span class="token punctuation">{</span>
+    <span class="token symbol">color<span class="token punctuation">:</span></span> <span class="token string">'#32325d'</span><span class="token punctuation">,</span>
+    <span class="token symbol">lineHeight<span class="token punctuation">:</span></span> <span class="token string">'24px'</span><span class="token punctuation">,</span>
+    <span class="token symbol">fontFamily<span class="token punctuation">:</span></span> <span class="token string">'"Helvetica Neue", Helvetica, sans-serif'</span><span class="token punctuation">,</span>
+    <span class="token symbol">fontSmoothing<span class="token punctuation">:</span></span> <span class="token string">'antialiased'</span><span class="token punctuation">,</span>
+    <span class="token symbol">fontSize<span class="token punctuation">:</span></span> <span class="token string">'16px'</span><span class="token punctuation">,</span>
+    <span class="token string">'::placeholder'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token symbol">color<span class="token punctuation">:</span></span> <span class="token string">'#aab7c4'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token symbol">invalid<span class="token punctuation">:</span></span> <span class="token punctuation">{</span>
+    <span class="token symbol">color<span class="token punctuation">:</span></span> <span class="token string">'#fa755a'</span><span class="token punctuation">,</span>
+    <span class="token symbol">iconColor<span class="token punctuation">:</span></span> <span class="token string">'#fa755a'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Create an instance of the card Element</span>
+<span class="token keyword">var</span> card <span class="token operator">=</span> elements<span class="token punctuation">.</span><span class="token property"></span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'card'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token symbol">style<span class="token punctuation">:</span></span> style<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Add an instance of the card Element into the `card-element` &lt;div&gt;</span>
+card<span class="token punctuation">.</span><span class="token property"></span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#card-element'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Handle real-time validation errors from the card Element.</span>
+card<span class="token punctuation">.</span><span class="token property"></span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> displayError <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token property"></span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'card-errors'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span><span class="token property">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    displayError<span class="token punctuation">.</span><span class="token property">textContent</span> <span class="token operator">=</span> event<span class="token punctuation">.</span><span class="token property">error</span><span class="token punctuation">.</span><span class="token property">message</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    displayError<span class="token punctuation">.</span><span class="token property">textContent</span> <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Handle form submission</span>
+<span class="token keyword">var</span> form <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token property"></span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'payment-form'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+form<span class="token punctuation">.</span><span class="token property"></span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  event<span class="token punctuation">.</span><span class="token property"></span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  stripe<span class="token punctuation">.</span><span class="token property"></span><span class="token function">createToken</span><span class="token punctuation">(</span>card<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token property"></span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token property">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// Inform the user if there was an error</span>
+      <span class="token keyword">var</span> errorElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token property"></span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'card-errors'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      errorElement<span class="token punctuation">.</span><span class="token property">textContent</span> <span class="token operator">=</span> result<span class="token punctuation">.</span><span class="token property">error</span><span class="token punctuation">.</span><span class="token property">message</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// Send the token to your server</span>
+      <span class="token function">stripeTokenHandler</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token property">token</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span class="line-numbers"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre>
+    <a class="show-extra-lines" style="display: none;">See all 57 lines</a>
+    <span class="extra-lines">
+// Handle real-time validation errors from the card Element.
+card.addEventListener('change', function(event) {
+  var displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});
+
+// Handle form submission
+var form = document.getElementById('payment-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  stripe.createToken(card).then(function(result) {
+    if (result.error) {
+      // Inform the user if there was an error
+      var errorElement = document.getElementById('card-errors');
+      errorElement.textContent = result.error.message;
+    } else {
+      // Send the token to your server
+      stripeTokenHandler(result.token);
+    }
+  });
+});</span>
+</div>
+
+    </div>
+  </div>
+</section>
+
+</article>
+      </div>
+    </div>
+
+    <div id="loading-bar" class="hidden" style="width: 100%;"></div>
+
+    <script src="./Stripe Elements Quickstart_files/jquery.min-94df374d2ad5d02ae136584dc008fb1c.js.download"></script>
+    <script src="./Stripe Elements Quickstart_files/prism-d5075226004891ae4c09f918cbb30da4.js.download"></script>
+    <script src="./Stripe Elements Quickstart_files/dynamics.min-14579f80273a61e6d0f4f45484e20dc7.js.download"></script>
+    <script src="./Stripe Elements Quickstart_files/jquery.cookie-d7482a1bbfda18d981eda4398666acdd.js.download"></script>
+    <script src="./Stripe Elements Quickstart_files/documentation-aacffd5ed434c342154ab7b535b98963.js.download"></script>
+      <script src="./Stripe Elements Quickstart_files/algoliasearch-4e595d1d9ac2ea4eeffc502d406eed8f.js.download"></script>
+      <script src="./Stripe Elements Quickstart_files/documentation-search-b1364fa7c7b59b7902a1b5d7b7d65fad.js.download"></script>
+
+      <script type="text/javascript" src="./Stripe Elements Quickstart_files/saved_resource"></script>
+  <script type="text/javascript" src="./Stripe Elements Quickstart_files/saved_resource(1)"></script>
+
+    
+    <script src="./Stripe Elements Quickstart_files/config-aead70c07cdca45cec67e4141bf18edc.js.download"></script>
+      
+<script type="application/json" id="analytics_config">{&quot;mixpanel&quot;:{&quot;identifier&quot;:&quot;eb71b6171a4f7ed97de9b7a0395b7ca5&quot;,&quot;disable&quot;:false,&quot;register&quot;:&quot;acct_1AREbfBbYDospvr0&quot;,&quot;identify&quot;:&quot;usr_AmoEoyKjvvvTvt&quot;,&quot;person&quot;:&quot;manula.g@aeturnum.com&quot;,&quot;name&quot;:&quot;manula.g@aeturnum.com&quot;,&quot;user&quot;:&quot;usr_AmoEoyKjvvvTvt&quot;},&quot;ga&quot;:{&quot;isLoggedIn&quot;:true},&quot;merchant&quot;:&quot;acct_1AREbfBbYDospvr0&quot;,&quot;user&quot;:&quot;usr_AmoEoyKjvvvTvt&quot;,&quot;trackpage&quot;:true}</script>
+
+<script src="./Stripe Elements Quickstart_files/analytics.min.js.download"></script>
+<script src="./Stripe Elements Quickstart_files/analytics-e800ab0ba76de2b697ea3f61c673695b.js.download"></script>
+<script src="./Stripe Elements Quickstart_files/stripe-m-preview.js.download"></script>
+
+    <script src="./Stripe Elements Quickstart_files/index-029d7e53925432b28df7ac2c3b429c09.js.download"></script>
+
+
+<script type="text/javascript">
+  (function() {
+    var configData = window.siteAnalyticsUtil.analyticsConfigData();
+    var htmlId = document.documentElement.id;
+    var trackPageViewed = false;
+
+    Analytics.configure(configData);
+
+    if (trackPageViewed && htmlId) {
+      Analytics.viewed(htmlId, configData);
+    }
+  })();
+</script>
+ 
+    <script src="./Stripe Elements Quickstart_files/documentation-analytics-b9a4613df8a3046bb93694843f6c5661.js.download"></script>
+  
+
+<iframe src="./Stripe Elements Quickstart_files/outer.html" style="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;"></iframe><iframe name="stripeXDM_default272868_provider" id="stripeXDM_default272868_provider" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=file%3A%2F%2F%2FC%3A%2FUsers%2Fmanula.g%2FDesktop%2FPlacepass%2FNew%2520folder%2520(2)%2FStripe%2520Elements%2520Quickstart.html&amp;stripe_xdm_c=default272868&amp;stripe_xdm_p=1#__stripe_transport__" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe></body></html>

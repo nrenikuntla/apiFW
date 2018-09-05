@@ -1,0 +1,8 @@
+{
+  "hitsPerPage": 10,
+  "isBookable": true,
+  "location": {
+    "formattedAddress": "San Francisco, CA"
+  },
+  "pageNumber": 2
+}
