@@ -605,7 +605,7 @@ public class Search extends APIHelpers {
 						+ " max: " + max + " Result " + (i + 1) + " ====================");
 				try {
 					Assert.assertNotNull(address, "FormattedAddress key holds null");
-				} catch (Throwable t) {
+				} catch (Throwable t) {//
 
 					Assert.fail("Product " + (i + 1) + " with Id " + objectIds.get(i)
 							+ " does not have address/product description matching given query: " + query);

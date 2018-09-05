@@ -38,7 +38,7 @@ public class LookupPartnerPlaceConfig_PP extends BaseSetup {
 
 		// Verify response code and message
 		data.verifyStatusCode("200");
-		data.verifyStatusMessage("OK");
+		data.verifyStatusMessage("OK");//
 
 		data.verifyPartnerPlaceConfigCityGuide(webid);
 	}
